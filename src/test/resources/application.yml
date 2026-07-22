@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:error_free_text;MODE=PostgreSQL;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: none
+  flyway:
+    enabled: true
+
+yandex:
+  speller:
+    connect-timeout: 2s
+    read-timeout: 5s
+
+app:
+  scheduler:
+    fixed-delay: 1h
+    batch-size: 1
